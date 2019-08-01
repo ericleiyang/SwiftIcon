@@ -10,39 +10,37 @@ Pod::Spec.new do |spec|
 
 # 1
 s.platform = :ios
-s.ios.deployment_target = '12.0'
-s.name = "RWPickFlavor"
-s.summary = "RWPickFlavor lets a user select an ice cream flavor."
+s.ios.deployment_target = '11.0'
+s.name = "SwiftIcon"
+s.summary = "SwiftIcon is a light weight linear font to icon framework. It allows user to get icon string and image by simply using a hex code of the font file. It's targeting iOS 11.0+ by using Swift"
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = "1.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
 
 # 4 - Replace with your name and e-mail address
-s.author = { "Keegan Rush" => "keeganrush@gmail.com" }
+s.author = { "Eric Yang" => "yanglei.eric@gmail.com" }
 
 # 5 - Replace this URL with your own GitHub page's URL (from the address bar)
-s.homepage = "https://github.com/TheCodedSelf/RWPickFlavor"
+s.homepage = "https://github.com/ericleiyang/SwiftIcon"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/TheCodedSelf/RWPickFlavor.git",
+s.source = { :git => "https://github.com/ericleiyang/SwiftIcon",
 :tag => "#{s.version}" }
 
 # 7
+s.framework = "Foundation"
+s.framework = "CoreGraphics"
+s.framework = "CoreText"
 s.framework = "UIKit"
-s.dependency 'Alamofire', '~> 4.7'
-s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
-s.source_files = "RWPickFlavor/**/*.{swift}"
+s.source_files = "./*.{swift}"
 
 # 9
-s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-
-# 10
 s.swift_version = "4.2"
 
 end
