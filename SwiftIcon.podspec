@@ -6,13 +6,13 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
 s.ios.deployment_target = '11.0'
 s.name = "SwiftIcon"
-s.summary = "SwiftIcon is a light weight linear font to icon framework. It allows user to get icon string and image by simply using a hex code of the font file. It's targeting iOS 11.0+ by using Swift"
+s.summary = "SwiftIcon is a light framework allows user to get icon string and image by simply using a hex code."
 s.requires_arc = true
 
 # 2
@@ -28,7 +28,7 @@ s.author = { "Eric Yang" => "yanglei.eric@gmail.com" }
 s.homepage = "https://github.com/ericleiyang/SwiftIcon"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/ericleiyang/SwiftIcon",
+s.source = { :git => "https://github.com/ericleiyang/SwiftIcon.git",
 :tag => "#{s.version}" }
 
 # 7
@@ -38,7 +38,7 @@ s.framework = "CoreText"
 s.framework = "UIKit"
 
 # 8
-s.source_files = "./*.{swift}"
+s.source_files = "SwiftIcon/SwiftIcon.swift"
 
 # 9
 s.swift_version = "4.2"
